@@ -1,0 +1,25 @@
+/* Custom scrollbar styles for the song list */
+.song-list-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.song-list-scrollbar::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+}
+
+.song-list-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(59, 130, 246, 0.5);
+  border-radius: 3px;
+  transition: background 0.2s ease;
+}
+
+.song-list-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(59, 130, 246, 0.7);
+}
+
+/* For Firefox */
+.song-list-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(59, 130, 246, 0.5) rgba(255, 255, 255, 0.1);
+}
